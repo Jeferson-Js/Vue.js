@@ -1,18 +1,37 @@
 <template>
-<div>
-  <h1>Olá vue!</h1>
-  <p>Meu nome é: {{name}} e trabalho como {{profissao}}</p>
-</div>
+  <div>
+    <h1>Olá vue!</h1>
+    <p>Meu nome é: {{ name }} e trabalho como {{ profissao }}</p>
+    <MultiplosEventos />
+    <Reutilizacao />
+    <Reutilizacao />
+    <Reutilizacao />
+    <Reutilizacao />
+    <Reutilizacao />
+    <Reutilizacao />
+    <Reutilizacao />
+    <Reutilizacao />
+    <Reutilizacao />
+    <Reutilizacao />
+    <Reutilizacao />
+    <Reutilizacao />
+  </div>
 </template>
 
 <script>
+import MultiplosEventos from "./MultiplosEventos.vue";
+import Reutilizacao from "./Reutilizacao.vue";
 export default {
   name: "PrimeiroComponente",
-  data(){
+  components: {
+    MultiplosEventos,
+    Reutilizacao,
+  },
+  data() {
     return {
-        name: "Jeferson Oliveira",
-        profissao: "programador!"
-    }
-  }
+      name: "Jeferson Oliveira",
+      profissao: "programador!",
+    };
+  },
 };
 </script>

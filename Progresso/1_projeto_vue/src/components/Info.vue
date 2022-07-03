@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p>{{compEmail}}</p>
     <p v-if="trabalhando">Estou trabalhando no momento.</p>
     <p v-else>Estou em busca de novas oportunidades.</p>
     <p>Utilizo as seguintes tecnologias para backend:</p>
@@ -30,6 +31,9 @@ export default {
   name: "Info",
   components: {
     Picture,
+  },
+  props: {
+    compEmail: String,
   },
   data() {
     return {
