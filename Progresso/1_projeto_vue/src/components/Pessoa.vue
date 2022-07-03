@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Rsaa é a descrição da pessoa: {{ nome }}</h2>
+    <h2>Essa é a descrição da pessoa: {{ nome }}</h2>
     <Info />
     <Form />
   </div>
