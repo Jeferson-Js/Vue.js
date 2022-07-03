@@ -1,14 +1,14 @@
 <template>
   <img v-bind:src="avatar" alt="descricao" />
-  <Reutilizacao />
+  <MudarImagem @mudar-imagem="trocarImagem" />
 </template>
 
 <script>
-import Reutilizacao from "./Reutilizacao.vue";
+import MudarImagem from "./MudarImagem.vue";
 export default {
   name: "Picture",
   components: {
-    Reutilizacao,
+    MudarImagem,
   },
   data() {
     return {
@@ -16,6 +16,10 @@ export default {
       decricao: "Jeferson Oliveira",
     };
   },
-  components: { Reutilizacao },
+  methods: {
+    trocarImagem() {
+      this.avatar = "/img/avatar2.png";
+    },
+  },
 };
 </script>
