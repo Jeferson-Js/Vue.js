@@ -1,6 +1,6 @@
-# Menu Mobile Moderno e Responsivo com Vue.js 3 e Tailwind CSS
+# Menu Mobile Moderno e Responsivo com Vue.js 3 e Tailwindcss
 
-![Demo](link_para_uma_imagem_do_projeto.gif)
+
 ![curso_vue](https://github.com/Jeferson-Js/Vue.js/assets/82729145/760074b6-9681-4445-bf22-18f4477f0f58)
 
 
